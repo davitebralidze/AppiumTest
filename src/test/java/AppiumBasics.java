@@ -19,9 +19,6 @@ public class AppiumBasics {
         String mainJSPath = os.contains("mac") ? "/usr/local/lib/node_modules/appium/build/lib/main.js" : "C:\\Users\\Admin\\AppData\\Roaming\\npm\\node_modules\\appium\\build\\lib\\main.js";
         String appPath = os.contains("mac") ? "/Users/davit/IdeaProjects/AppiumPlayground/src/test/resources/ApiDemos-debug.apk" : "C:\\Users\\Admin\\IdeaProjects\\AppiumTest\\src\\test\\resources\\ApiDemos-debug.apk";
 
-        System.out.println(mainJSPath);
-        System.out.println(appPath);
-
         AppiumDriverLocalService service = new AppiumServiceBuilder()
                 .withAppiumJS(new File(mainJSPath))
                 .withIPAddress("127.0.0.1")
